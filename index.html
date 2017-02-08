@@ -32,7 +32,7 @@ title: WWCode SF
 </section>
 
 <!-- Three -->
-<section id="three">
+<section id="code-of-conduct">
   <div class="container">
     <h3>A Few Accomplishments</h3>
     <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
@@ -67,9 +67,12 @@ title: WWCode SF
   <div class="container">
     <h3>Contact Me</h3>
     <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-    <form method="post" action="#">
+    <!-- <form method="post" action="#"> -->
+    <form method="post" action="https://wwcodesf-wheeliebot.herokuapp.com/signup">
       <div class="row uniform">
         <div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+      </div>
+      <div class="row uniform">
         <div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
       </div>
       <div class="row uniform">
@@ -79,13 +82,23 @@ title: WWCode SF
         <div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
       </div>
       <div class="row uniform">
+        <div class="6u 12u(medium)">
+          <input type="checkbox" id="coc-agree" name="coc-agree">
+          <label for="coc-agree">
+            I agree to the <a href="#code-of-conduct">Code of Conduct</a>
+          </label>
+        </div>
+      </div>
+      <div class="row uniform">
         <div class="12u">
           <ul class="actions">
-            <li><input type="submit" class="special" value="Send Message" /></li>
+            <li><input type="submit" class="special" value="Request Invite" /></li>
             <li><input type="reset" value="Reset Form" /></li>
           </ul>
         </div>
       </div>
+      <input type="hidden" name="redirect_url" value="#one"/>
+      <input type="hidden" name="team_id" value="T038VNA0N"/>
     </form>
   </div>
 </section>
